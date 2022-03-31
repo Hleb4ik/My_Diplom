@@ -1,0 +1,453 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+h1,h2,h3,h4,h5,h6,p,button,input{
+    padding: 0;
+    margin: 0;
+}
+/* Page container */
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cont{
+    width: 85%;
+    margin: 0 auto;
+}
+/* Page container */
+
+/* Header */
+.header{
+    align-items: center;
+    background-color: rgba(34, 37, 45, 0.97);
+    justify-content: space-evenly;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    color: #ffffff;
+}
+.header .cont{
+    width: 92.5%;
+    margin-left: 7.5%;
+}
+.head{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.head h3{
+    color: #000000;
+}
+#btnAuthORMenu{
+    margin-right: 9%;
+}
+/* Header */
+
+/* Section */
+.section{
+    flex: 1 1 auto;
+    margin-top: 100px;
+}
+.section .cont{
+    width: 85%;
+}
+.section-divs{
+    display: flex;
+}
+.left-div{
+    width: 50%;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin: 20px 20px 20px 0px;
+    padding: 10px;
+    box-shadow: 0px 1px 24px rgba(0,0,0,0.74);
+}
+.right-div{
+    width: 50%;
+    /* text-align: right; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin: 20px 0px 20px 20px;
+    padding: 10px;
+    box-shadow: 0px 1px 24px rgba(0,0,0,0.74);
+}
+.top-div{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin: 20px 0px 40px 0px;
+    padding: 10px;
+    box-shadow: 0px 1px 24px rgba(0,0,0,0.74);
+    display: flex;
+    justify-content: center;
+}
+.bottom-div{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin: 20px 0px 40px 0px;
+    padding: 10px;
+    box-shadow: 0px 1px 24px rgba(0,0,0,0.74);
+    text-align: center;
+}
+/* Section */
+
+/* Footer */
+.footer{
+    /* background-color: #975a58; */
+    background-color: #2c3138;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid white;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.links{
+    display: flex;
+    justify-content: center;
+}
+.link-img{
+    width: 40px;
+    height: 40px;
+}
+.contact-info-link{
+    margin: 5px;
+}
+/* Footer */
+
+/* ---------------------------------------------------- Partition style ---------------------------------------------------- */
+
+/* Modal style */
+.modal-footer{
+    padding-bottom: 0;
+    justify-content: space-evenly;
+}
+.form-control{
+    margin-top: 5px;
+}
+ .form-control:focus{
+    box-shadow: none;
+    border-color: #ced4da;
+}
+.btn-close:focus{
+    box-shadow: none;
+}
+.modal-fix{
+    max-width: 95%;
+}
+/* Modal style */
+
+/* Menu */
+.offcanvas{
+    /* background-color: rgb(240, 235, 239); */
+    width: 350px;
+}
+.admin-panel{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.menu-text{
+    margin: 5px;
+}
+/* Menu */
+
+/* Button style */
+.EntranceBtn{
+    color: #ffffff;
+    box-shadow: none;
+    border: none;
+    background-color: #f98500;
+    width: 80px;
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.EntranceBtn:hover{
+    background-color: #e27a02;
+    transition: .3s;
+}
+.menu-btn{
+    visibility: visible;
+    border: none;
+    border-radius: 5px;
+    background-color: #f98500;
+    padding: 2px 5px 2px 5px;
+    margin: 5px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.menu-btn:hover{
+    background-color: #e27a02;
+    transition: .3s;
+}
+.menu-btn:focus{
+    box-shadow: none;
+}
+.menu-upload-btn:hover, .menu-dis-btn:hover, .menu-test-btn:hover{
+    box-shadow: none;
+}
+.btn-open-menu{
+    color: #ffffff;
+    box-shadow: none;
+    border: none;
+    /* background-color: #f98500; */
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    /* padding: 3px 5px 3px 5px; */
+    /* border-radius: 5px; */
+}
+.btn-open-menu span,
+.btn-open-menu span::before,
+.btn-open-menu span::after{
+    position: absolute;
+    top: 50%; margin-top: -1px;
+    left: 50%; margin-left: -15px;
+    width: 30px;
+    height: 3px;
+    background-color: #f98500;
+    border-radius: 5px;
+}
+.btn-open-menu span::before,
+.btn-open-menu span::after{
+    content: '';
+    display: block;
+    transition: .5s;
+}
+.btn-open-menu span::before{
+    transform: translateY(-8px);
+}
+.btn-open-menu span::after{
+    transform: translateY(8px);
+}
+.btn{
+    padding: 0;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.btn-primary{
+    border: none;
+    border-radius: 5px;
+    background-color: #f98500;
+    padding: 2px 15px 2px 15px;
+    transition: 0.3s;
+    /* width: 90px; */
+}
+.btn-primary:hover{
+    background-color: #e27a02;
+    transition: .3s;
+}
+/* Button style */
+
+/* Иные стили */
+.error{
+    color: #dc3545;
+}
+.reg{
+    color: #198754;
+}
+input[type=file]{
+    display: none;
+}
+/* Иные стили */
+
+/* Загрузка файлов */
+.preview{
+    padding: .5rem;
+    padding-left: 0px;
+}
+.preview-file {
+    position: relative;
+    white-space: nowrap;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    overflow: hidden;
+}
+.preview-file.removing{
+    transform: scale(0);
+    transition: .3s;
+}
+.preview-file:hover .preview-remove{
+    opacity: 1;
+}
+.preview-remove{
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+    background: rgba(255, 255, 255, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity .22s;
+}
+.preview-info-progress{
+    height: 5px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #198754;
+    text-align: center;
+    transition: width .22s;
+}
+.open-btn{
+    background: none;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    margin: -5px;
+}
+.upload-btn{
+    background: none;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    margin-left: 10px;
+}
+.list{
+    margin-bottom: 7px;
+}
+.type-list{
+    margin-bottom: 5px;
+}
+.select{
+    cursor: pointer;
+}
+.select:focus{
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+/* Загрузка файлов */
+
+/* Окно добавления/редактирования/удаления дисциплин */
+.dis-remove, .dis-edit{
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.dis-list{
+    display: flex;
+}
+.mfdl{
+    display: inline;
+}
+/* Окно добавления/редактирования/удаления дисциплин */
+
+/* Главное меню с дисциплинами */
+.dis-modal-body{
+    display: flex;
+    justify-content: center;
+}
+.dis-modal-body-left{
+    border-right: 0px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+    width: 50%;
+    padding: 10px;
+}
+.dis-modal-body-right{
+    border-right: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+    width: 50%;
+    padding: 10px;
+}
+.href{
+    text-decoration: none;
+    color: #000000;
+    transition: .2s;
+    display: flex;
+    opacity: .7;
+}
+.href:hover{
+    color: #1b1b1b;
+    transition: .2s;
+    opacity: 1;
+}
+.dis-file{
+    display: flex;
+}
+.content-body{
+    display: flex;
+}
+.remove-file{
+    cursor: pointer;
+}
+/* Главное меню с дисциплинами */
+
+/* Окно с тестами */
+.tests-body{
+    display: flex;
+}
+.test-list-settings{
+    display: flex;
+}
+.btn-test{
+    border: none;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 2px 5px 2px 5px;
+    color: #ffffff;
+    background-color: #f98500;
+    transition: .3s;
+}
+.btn-test:hover{
+    background-color: #e27a02;
+    transition: .3s;
+}
+.test-open{
+    background-color: #ff5667;
+    transition: .3s;
+}
+.test-open:hover{
+    background-color: #dd4d5c;
+    transition: .3s;
+}
+.test-closed{
+    background-color: #1db971;
+    transition: .3s;
+}
+.test-closed:hover{
+    background-color: #199e60;
+    transition: .3s;
+}
+/* Окно с тестами */
+
+/* Адаптив */
+@media (max-width: 600px) {
+    .section-divs{
+        display: block;
+        margin-top: 40px;
+    }
+    .right-div{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .left-div{
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+
+/*# sourceMappingURL=/style.78032849.css.map */

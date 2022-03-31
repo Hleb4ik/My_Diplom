@@ -1,0 +1,29 @@
+.btn-mainMenu{
+    color:  #000;
+    background: white;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 7px;
+    padding: 15px;
+    margin: 35px;
+    transition: 0.3s;
+    height: 180px;
+    width: 180px;
+}
+.btn-mainMenu:hover{
+    color: black;
+    transition: 0.2s;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0px 1px 24px rgba(0,0,0,0.74);
+}
+.mainMenu-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 24px rgba(0,0,0,0.74);
+}
+
+/*# sourceMappingURL=/mainMenu.1c71c7b0.css.map */

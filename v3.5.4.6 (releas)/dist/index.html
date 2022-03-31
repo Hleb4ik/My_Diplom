@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_blank">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Образовательный портал Кричко Валерии Юрьевны</title>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="wrapper">
+        <header class="header animate__animated animate__fadeInDown">
+            <div class="cont head">
+                <div class="head-name">
+                    <h4>Образовательный портал преподавателя</h4>
+                    <h5>Кричко Валерии Юрьевны</h5>
+                </div>
+                <div id="btnAuthORMenu">
+                    <button type="button" id="EntranceBtn" class="EntranceBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Войти</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="scroll">
+            <section class="section">
+                <div class="cont">
+                    <div class="animate-menu-div animate__animated">
+                        <div class="top-div">
+                            <h3>Дисциплины</h3>
+                        </div>
+                        <div class="mainMenu-content animate__animated">
+        
+                        </div>
+                    </div>
+                    <div class="content-divs">
+                        <div class="section-divs">
+                            <div class="left-div animate__animated animate__fadeInBottomLeft">
+                                <h3>Важная информация</h3>
+                                <div class="div-info">
+                                </div>
+                            </div>
+                            <div class="right-div animate__animated animate__fadeInBottomRight">
+                                <h3>Полезные ссылки</h3>
+                                <div class="div-links">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-div animate__animated animate__fadeInUp">
+                            <h3>Достижения</h3>
+                            <div class="div-achiev">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <footer class="footer animate__animated animate__fadeInUp">
+                <div class="cont">
+                    <div>
+                        
+                    </div>
+                    <p>Developed by Hlep4ik &#169; Все права защищены </p>
+                    <div class="links">
+                        <a class="contact-info-link" href="" target="_blank"><img class="link-img" src="https://firebasestorage.googleapis.com/v0/b/edupor-web-app.appspot.com/o/img%2Ftg.png?alt=media&token=acfeb4a6-3618-4705-88a0-04f32ffec615" title="Telegram" alt="Telegram"></a>
+                        <a class="contact-info-link" href="" target="_blank"><img class="link-img" src="https://firebasestorage.googleapis.com/v0/b/edupor-web-app.appspot.com/o/img%2Finst.png?alt=media&token=e47c5936-a764-4405-a652-14b55c44ffb8" title="Instagram" alt="Instagram"></a>
+                        <a class="contact-info-link" href="" target="_blank"><img class="link-img" src="https://firebasestorage.googleapis.com/v0/b/edupor-web-app.appspot.com/o/img%2Fvk.png?alt=media&token=85ad16bb-278a-48de-9173-c26453020b57" title="VK" alt="VK"></a>
+                        <a class="contact-info-link" href="" target="_blank"><img class="link-img" src="https://firebasestorage.googleapis.com/v0/b/edupor-web-app.appspot.com/o/img%2Fgm.png?alt=media&token=8b9ade31-cace-4da3-890f-b42651435b2b" title="G-Mail" alt="G-Mail"></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Modal forms -->
+    <modal>
+        <!-- Modal Authorization form -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div id="Authorization">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Авторизация</h5>
+                            <button type="button" id="Close" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="formAut" action="" class="row g-3 needs-validation" novalidate="">
+                                <div>
+                                    <p>Email</p>
+                                    <input type="email" name="login" id="login" class="form-control" placeholder="myemail@gmail.com" required="">
+                                </div>
+                                <div>
+                                    <p>Пароль</p>
+                                    <input type="password" name="pass" id="pass" class="form-control" required="">
+                                </div>
+                                <div id="errorAut"></div>
+                                <div class="modal-footer">
+                                    <button type="submit" id="bthAut" class="btn btn-primary">Войти</button>
+                                    <button type="button" id="RegisterBtn" class="btn btnReg" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#exampleModalR">Регистрация</button> 
+                                </div>
+                            </form>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Registration form -->
+        <div class="modal fade" id="exampleModalR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div id="Authorization">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+                            <button type="button" id="CloseR" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="formReg" action="" class="row g-3 needs-validation" novalidate="">
+                                <div>
+                                    <p>Имя</p>
+                                    <input type="text" name="name" id="name" class="form-control" required="" pattern="[А-Яа-яЁё]{3,}">
+                                </div>
+                                <div>
+                                    <p>Фамилия</p>
+                                    <input type="text" name="surname" id="surname" class="form-control" required="" pattern="[А-Яа-яЁё]{3,}">
+                                </div>
+                                <div>
+                                    <p>Email</p>
+                                    <input type="email" name="regLogin" id="regLogin" class="form-control" placeholder="myemail@gmail.com" required="">
+                                </div>
+                                <div>
+                                    <p>Пароль</p>
+                                    <input type="password" name="regPass" id="regPass" class="form-control" placeholder="Минимум 6 символов" required="" pattern="[A-Za-zА-Яа-яЁё0-9]{6,}">
+                                </div>
+                                <div id="errorReg"></div>
+                                <div class="modal-footer">
+                                    <button type="submit" id="btnReg" class="btn btn-primary">Зарегистрироваться</button>
+                                </div>
+                            </form>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Notification -->
+        <div class="position-fixed bottom-0 end-0 p-3 notification" style="z-index: 1061">
+            <div id="liveToast" class="toast fade hide" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Уведомление</strong>
+                    <small></small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Null
+                </div>
+            </div>
+        </div>
+        <!-- menu -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title menu-text" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <div class="user-panel">
+                        <li><button type="button" class="menu-btn menu-edit-profile" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#exampleModalEdtProf">Редактировать профиль</button></li>
+                        <li><button type="button" class="menu-btn menu-test-btn" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#exampleModalTestList">Тестирование</button></li>
+                        <li><button type="button" class="menu-btn" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#exampleModalBugReport">Сообщить о проблеме</button></li>
+                    </div>
+                    <div class="in-process" hidden="true">
+                        <li class="menu-text">В разработке*</li>
+                        <li>Подсказка: Нажать 3 кнопки одновременно, но какие???</li>
+                        <li>Подсказка: Может стоит поискать в коде?</li>
+                        <li>Подсказка: Или эти буквы есть в слове admin?</li>
+                        <li class="menu-text">**Онлайн конференции</li>
+                    </div>
+                    <div class="admin-panel" id="admin-panel">
+                        <li class="menu-text">Возможности администратора</li>
+                        <li><button type="button" class="menu-btn menu-upload-btn" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#exampleModalUpl">Загрузить файл</button></li>
+                        <li><button type="button" class="menu-btn menu-dis-btn" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#exampleModalAddDis">Дисциплины</button></li>
+                        <li><button type="button" class="menu-btn menu-add-test-btn" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#exampleModalAddTest">Добавление тестов</button></li>
+                        <li><button type="button" class="menu-btn menu-test-settings-btn" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#exampleModalTestList">Настройка тестов</button></li>
+                        <li><button type="button" class="menu-btn menu-achiev-btn" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#exampleModalAchievement">Достижения</button></li>
+                        <li><button type="button" class="menu-btn menu-useful-links-btn" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#exampleModalUsefulLinks">Полезные ссылки</button></li>
+                        <li><button type="button" class="menu-btn menu-useful-info-btn" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#exampleModalUsefulInfo">Важная информация</button></li>
+                    </div>
+                    <li><button type="button" class="menu-btn" id="exit">Выйти</button></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Modal upload file -->
+        <div class="modal fade" id="exampleModalUpl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Загрузка файлов</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <select class="list form-select select" aria-label="Default select example">
+                                <option selected="">Выберите дисциплину</option>
+                            </select>
+                            <select class="type-list form-select select" aria-label="Default select example">
+                                <option selected="">Выберите тип</option>
+                                <option value="lit">Лекция</option>
+                                <option value="lab">Лабораторная</option>
+                            </select>
+                        </div>
+                        <input type="file" id="file">
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- Modal add discipline -->
+        <div class="modal fade" id="exampleModalAddDis" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Дисциплины</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Название Дисциплины</p>
+                        <input type="text" id="dispName" class="form-control">
+                        <button class="btn" id="addDiscipline">Добавить</button>
+                    </div> 
+                    <div class="modal-footer mfdl">
+                        <div class="disciplines-list">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal discipline info -->
+        <div class="modal fade" id="exampleModalDisInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-fix">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title dis-modal" id="exampleModalLabel">*Название дисциплины*</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body dis-modal-body">
+                        <div class="dis-modal-body-left">
+                            <div>Лекции</div>
+                            <div class="content-body">
+                                <div class="dis-modal-content-body-left"></div>
+                            </div>
+                        </div> 
+                        <div class="dis-modal-body-right">
+                            <div>Лабораторные работы</div>
+                            <div class="content-body">
+                                <div class="dis-modal-content-body-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal edit discipline name -->
+        <div class="modal fade" id="exampleModalEdtDis" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Редактирование</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Название Дисциплины</p>
+                        <input type="text" id="dispNameE" class="form-control">
+                        <div class="edit-btn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal add test -->
+        <div class="modal fade" id="exampleModalAddTest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Новый тест</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="create-test-body">
+                            <p>Введите количество вопросов</p>
+                            <input type="text" id="NumOfQuest" class="form-control inp-questions-number">
+                            <button class="btn" id="CreateQuestion">Сформировать</button>
+                        </div>
+                        <div class="create-test-footer">
+
+                        </div>
+                    </div> 
+                    <div class="modal-footer test-modal-footer">
+                        <button id="addTestInDB-btn" class="btn">Добавить</button>
+                        <button id="clear-btn" class="btn">Откат</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal test list -->
+        <div class="modal fade" id="exampleModalTestList" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Доступные тесты</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body tests-body">
+                        <div class="modal-test-list">
+
+                        </div>
+                        <div class="test-list-settings">
+
+                        </div>
+                    </div> 
+                    <!-- <div class="modal-footer">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Modal passing the test -->                      <!--|||||||||||||||||||||||||||||||||||||||||||-->
+        <div class="modal fade" id="exampleModalPassingTest" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered"> <!--|||||||||||||||||||||||||||||||||||||||||||-->
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalTestName">Test name</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body test-body">
+
+                    </div> 
+                    <div class="modal-footer test-footer">
+                        <div class="test-answers" hidden="true"></div>
+                        <button class="btn btn-test-verify">Проверить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal bug report -->
+        <div class="modal fade" id="exampleModalBugReport" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Баг репорт</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Данные для связи</p>
+                        <input type="text" id="contact-info-label" class="form-control" placeholder="VK.id, instagram, telegram">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="report-label" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Описание проблемы</label>
+                        </div>
+                        <button class="btn" id="add-report-btn">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal edit profile -->
+        <div class="modal fade" id="exampleModalEdtProf" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Редактирование профиля</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Имя</p>
+                        <input type="text" id="uName" class="form-control" required="" pattern="[А-Яа-яЁё]{3,}">
+                        <p>Фамилия</p>
+                        <input type="text" id="uSurname" class="form-control" required="" pattern="[А-Яа-яЁё]{3,}">
+                        <button class="btn btn-edit-profile">Редактировать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modat Achievement -->
+        <div class="modal fade" id="exampleModalAchievement" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Достижения</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="add-achiev">
+                            <input type="text" id="Achiev-Link" class="form-control">
+                            <p>Название</p>
+                            <input type="text" id="Achiev-name" class="form-control">
+                            <button class="btn" id="add-Achievement-btn">Добавить</button>
+                        </div>
+                        <div class="achiev-list">
+
+                        </div>
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Useful Links -->
+        <div class="modal fade" id="exampleModalUsefulLinks" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Полезные ссылки</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="add-link">
+                            <p>Название</p>
+                            <input type="text" id="Useful-Link-name" class="form-control">
+                            <p>Ссылка</p>
+                            <input type="text" id="Useful-Link" class="form-control">
+                            <button class="btn" id="add-Useful-Link-btn">Добавить</button>
+                        </div>
+                        <div class="UsefulLinks-list">
+
+                        </div>
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Useful Info -->
+        <div class="modal fade" id="exampleModalUsefulInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Важная информация</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="add-info">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="Useful-Info-label" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Информация</label>
+                            </div>
+                            <button class="btn" id="add-Useful-Info-btn">Добавить</button>
+                        </div>
+                        <div>
+                            <div class="UsefulInfo-list">
+                                
+                            </div>
+                            <div class="UsefulInfo-del-list">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </modal>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
